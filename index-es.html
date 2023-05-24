@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Karamba Tienda </title>
+
+  <!-- Bootstrap Style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+
+  <!-- Owl Carousel Style -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- Font Awesome Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--
+    .___  ___.  __   __        ______           ___       _______  __    __   _______   _______  __        ______   
+    |   \/   | |  | |  |      /  __  \         /   \     /  _____||  |  |  | |       \ |   ____||  |      /  __  \                         
+    |  \  /  | |  | |  |     |  |  |  |       /  ^  \   |  |  __  |  |  |  | |  .--.  ||  |__   |  |     |  |  |  |      
+    |  |\/|  | |  | |  |     |  |  |  |      /  /_\  \  |  | |_ | |  |  |  | |  |  |  ||   __|  |  |     |  |  |  |                    
+    |  |  |  | |  | |  `----.|  `--'  |     /  _____  \ |  |__| | |  `--'  | |  '--'  ||  |____ |  `----.|  `--'  |      
+    |__|  |__| |__| |_______| \______/     /__/     \__\ \______|  \______/  |_______/ |_______||_______| \______/    -->
+
+  <!-- Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="css/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- CSS Style -->
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet" />
+
+
+
+</head>
+<body>
+	<!-- Hero Main Container -->
+	<div class="hero">
+		<div class="background">
+			<img src="img/background.png">
+		</div>
+		<!-- Header Including Navbar -->
+		<header class="header">
+			<!-- Header Container -->
+			<div class="container">
+				<!-- Navbar -->
+				<nav class="navbar navbar-expand-lg custom_nav-container ">
+					<!-- Logo Container -->
+					<a class="navbar-logo" href="index.html">
+						<img src="img/logo.png" alt="Karamba">
+					</a>
+					<!-- Toggle Navbar Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class=""> </span>
+					</button>
+
+					<!-- Navbar Options -->
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav  mx-auto ">
+							<li class="nav-item active">
+								<a class="nav-link" href="index-es.html" id="navbar-1"> Inicio </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="menu-es.html" id="navbar-2"> Menú </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about-es.html" id="navbar-3"> Historia </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.atom.bio/karambatienda?fbclid=PAAaba616MhesenlVCeqHczS1yLvFo6ryi8vtYT-9hBz96gllxUj3kr4OTHQ8" id="navbar-4"> Redes Sociales </a>
+							</li>
+							
+						</ul>
+						
+						<!-- Navbar Icons -->
+						<div class="user_option">
+							<a href="login.html" class="user_link">
+								<i class="fa-solid fa-user fa-xl"></i>
+							</a>
+							<a class="cart_link" href="#">
+								<i class="fa-solid fa-cart-shopping fa-xl" id="cart-icon"></i>
+							</a>
+						</div>
+
+            <!-- Shopping Cart -->
+            <div class="cart">
+              <h2 class="cart-title">Carrito de Compras</h2>
+              <!-- Content -->
+              <div class="cart-content">
+
+              </div>
+              <!-- Total -->
+              <div class="total">
+                  <div class="total-title">Sub-total</div>
+                  <div class="total-price">$0</div>
+              </div>
+              <!-- Buy Button -->
+              <button type="button" class="btn-buy">Finalizar Orden</button>
+              <!-- Cart Close -->
+              <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+
+						<!-- Language Selector -->
+						<div class="dropdown-center language_selector" id="languageSelector">
+							<button class="btn transparent-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<span class="boton-icon" id="boton-icon">
+									<img src="img/co.png" class="flag-main">
+								</span>
+							</button>
+							<ul class="dropdown-menu animate__animated">
+							<button class="boton transparent-btn dropdown-item" type="button" onclick="changeLanguage('index-us')">
+									<span class="boton-icon" id="">
+										<img src="img/us.png" class="flag-main">
+										<span class="flag-text">US</span>
+									</span>
+							</button>
+							<!-- <button class="boton transparent-btn dropdown-item " type="button" onclick="changeLanguage('fr')">
+								<span class="boton-icon">
+									<img src="img/fr.png" class="flag-secondary">
+									<span class="flag-text">FR</span>
+								</span>
+							</button>
+							<button class="boton transparent-btn dropdown-item " type="button" onclick="changeLanguage('br')">
+								<span class="boton-icon">
+									<img src="img/br.png" class="flag-secondary">
+									<span class="flag-text">BR</span>
+								</span>
+							</button> -->
+							</ul>
+						</div>
+						
+					</div>
+				</nav>
+			</div>
+		</header>
+    
+
+		<!-- Slider section -->
+		<section class="slider_section ">
+			<div id="customCarousel1" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="container ">
+							<div class="row">
+								<div class="col-md-7 col-lg-6 ">
+									<div class="detail-box">
+										<h1>
+											Desayunos Sorpresa
+										</h1>
+										<p>
+											Sorprende a tus seres queridos con nuestros Desayunos Sorpresa!
+										</p>
+										<div class="btn-box">
+											<a href="menu-es.html" class="btn1">
+												Consulta Nuestro Menu
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item ">
+						<div class="container ">
+							<div class="row">
+								<div class="col-md-7 col-lg-6 ">
+									<div class="detail-box" id="db-2">
+										<h1>
+											Ramos de Flores
+										</h1>
+										<p>
+											¡Meticulosamente diseñados para brindar alegría y felicidad los que más quieres!
+										</p>
+										<div class="btn-box">
+											<a href="menu-es.html" class="btn1">
+												Consulta Nuestro Menu
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container ">
+							<div class="row">
+								<div class="col-md-7 col-lg-6 ">
+									<div class="detail-box">
+										<h1>
+											Tortas Personalizadas
+										</h1>
+										<p>
+											Habilmente elaboradas para deleitar y cautivar tus sentidos!
+										</p>
+										<div class="btn-box">
+											<a href="menu-es.html" class="btn1">
+												Consulta Nuestro Menu
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<ol class="carousel-indicators">
+						<li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+						<li data-target="#customCarousel1" data-slide-to="1"></li>
+						<li data-target="#customCarousel1" data-slide-to="2"></li>
+					</ol>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<!-- About Us -->
+	<div class="container-xxl py-5">
+		<div class="container">
+				<div class="row g-5 align-items-center">
+						<div class="col-lg-6">
+								<div class="row g-3">
+										<div class="col-6 text-start">
+												<img class="img-fluid border-rounded w-100" src="img/about-1.jpg">
+										</div>
+										<div class="col-6 text-start">
+												<img class="img-fluid border-rounded w-75" src="img/about-2.jpg" style="margin-top: 25%;">
+										</div>
+										<div class="col-6 text-end">
+												<img class="img-fluid border-rounded w-75" src="img/about-3.jpg">
+										</div>
+										<div class="col-6 text-end">
+												<img class="img-fluid border-rounded w-100" src="img/about-4.jpg">
+										</div>
+								</div>
+						</div>
+						<div class="col-lg-6">
+								<h5 class="section-title about-us">Historia</h5>
+								<h1 class="mb-4 karamba-title">Somos Karamba Tienda</h1>
+								<p class="mb-4 about-text">Hacer de un gusto por la creatividad y los colores, un negocio; fue la mejor decisión para que en 2013 se creara la marca que ya cumple 10 años en el mercado</p>
+								<p class="mb-4 about-text">Iniciamos siendo una tienda física de detalles en conjunto con heladería con servicio a la mesa, pero rápidamente migramos a ser tienda virtual, siendo unos de los pioneros en éste tipo de ventas en Cartago.</p>
+								<p class="mb-4 about-text">Aún cuando inició el fueror del pin de BlackBerry, empezamos a dar a conocer nuestro código y con nuestros conocimientos de comunicación y redes, logramos que nuestra marca se posicionara y creciera su alcance local.</p>
+                <div class="row g-4 mb-4">
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                      <h1 class="about-numbers counter">10</h1>
+                      <div class="ps-4">
+                        <p class="mb-0 about-text">Años de</p>
+                        <h6 class="text-uppercase mb-0 about-bold">Experiencia</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                      <h1 class="about-numbers">+</h1>
+                      <h1 class="about-numbers counter">5000</h1>
+                      <div class="ps-4">
+                        <p class="mb-0 about-text">Productos</p>
+                        <h6 class="text-uppercase mb-0 about-bold">Vendidos</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+						</div>
+				</div>
+		</div>
+	</div>
+
+  <!-- Menu Parallax-->
+  <div class="menu">
+    <div class="parallax">  
+      <div class="content">
+        <h1><span>&ldquo;</span>Una Amplia selección de productos para tu comodidad<span>&rdquo;</span></h1>	
+        <a href="menu-es.html" class="parallax-btn">Menú</a>
+      </div>
+    </div>  
+  </div>
+  
+  <!-- Menu -->
+  <section class="menu-section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h1 class="main-title">
+          <img src="favicon/android-chrome-192x192.png">
+          Nuestro Menú
+          <img src="favicon/android-chrome-192x192.png">
+        </h1>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">Todo</li>
+        <li data-filter=".meal-box">Desayunos Sorpresa</li>
+        <li data-filter=".flower-bouquet">Ramos de Flores</li>
+        <li data-filter=".cake">Tortas Personalizadas</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/juanjaramillo-box.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ancheta Juan Jaramillo &reg
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $135.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/siam-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo de Rosas Siam &reg
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $125.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/rastacuando-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Rastacuando &reg
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $155.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/albertoplaza-box.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ancheta Alberto Plaza &reg
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $155.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/friends-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo de Amistad
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $230.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/calamares-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Calamares &reg
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $350.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/m-box-chocolates.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Caja de Cocolates "M"
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $95.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/golden-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo Dorado
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $200.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/supermario-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Super Mario
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $285.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/m-box-variety.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Caja Variada "M"
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $85.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/sunflower-love.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Amor por los Girasoles
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $128.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/graduation-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta de Grado
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $400.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/love-box.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Desayuno Amor
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $75.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/redsun-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo "Sol Rojo"
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $185.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/florky-graduated.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Florky Graduado
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $58.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/heart-box.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Desayuno Corazón
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $64.500
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/fruits-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo de Frutas
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $165.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/florky-birthday.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Cumpleaños Florky
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $58.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/giant-hbd.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    HBD Gigante
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $120.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/love-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo "Love"
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $225.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/florky-aunty-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Tía Florky
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $58.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/metallized-balloon.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Globo Metalizado
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $67.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/wine-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo de Vino
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $225.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/grandma-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta de la Abuela
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $96.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/burrito-wooden-box.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Desayuno Burritos
+                  </h5> 
+                  <div class="options">
+                    <h6 class="price">
+                      $68.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/star-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo de Estrellas
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $120.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/florky-mom-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Mamá Florky
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $40.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/woman-chocolates.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Chocolates "Mujer" 
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $47.500
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/gradient-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo Metalizado
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $155.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/florky-mooring-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta Amarre Florky
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $40.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/mustache-chocolates.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Chocolates de Mostacho
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $37.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/pineapple-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo de Piña
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $135.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/strawberry-cake.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Torta de Fresas
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $75.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all meal-box">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/waffles-box.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Caja de Waffles
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $35.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all flower-bouquet">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/healthy-bouquet.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Ramo Saludable
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $165.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cake">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="img/florky-cookie.jpg" alt="" class="product-img">
+                </div>
+                <div class="detail-box">
+                  <h5 class="product-title">
+                    Galleta Florky
+                  </h5>
+                  <div class="options">
+                    <h6 class="price">
+                      $8.000
+                    </h6>
+                  </div>
+                </div>
+                <button class="cart-button add-cart">
+                  <span class="add-to-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="added">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-box"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deliveries Parallax-->
+  <div class="deliveries">
+    <div class="parallax">  
+      <div class="content">
+        <h1><span>&ldquo;</span>La Mejor Calidad Directo a Tu Puerta<span>&rdquo;</span></h1>	
+        <a href="menu-es.html" class="parallax-btn">Domicilios</a>
+      </div>
+    </div>  
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact-container">
+    <div class="contact-box">
+      <div class="contact-left"></div>
+      <div class="contact-right">
+        <h2 class="contact-h2">Contáctanos</h2>
+        <input type="text" class="contact-field" placeholder="Nombre">
+        <input type="text" class="contact-field" placeholder="E-Mail">
+        <input type="text" class="contact-field" placeholder="Celular">
+        <textarea placeholder="Mensaje" class="contact-field"></textarea>
+        <button class="contact-btn" id="liveToastBtn" onclick="contact()">Enviar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div> -->
+  
+
+  <!-- Back to Top -->
+  <button type="button" class="btn btn-floating" id="btn-back-to-top">
+    <i class="fas fa-arrow-up bounce"></i>
+  </button>
+
+  <!-- Footer & Copyright -->
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+
+    <ul class="social-icon">
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://www.facebook.com/TiendaKaramba/" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://wa.me/573116108002/" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </li>
+      <li class="social-icon__item">
+        <a class="social-icon__link" href="https://www.instagram.com/karambatienda/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+
+    <p>&copy; Diseñado por Camilo Agudelo</p>
+    <p>&copy; 2023 Karamba Tienda | Todos los Derechos Reservados</p>
+  </footer>
+
+  <!-- JQuery Script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+  <!-- Counter Up Script -->
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+
+  <!-- Isotope Script -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Nice Select Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+
+  <!-- Bootstrap Script  -->
+	<script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <!-- Owl Carousel Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Shopping Cart -->
+  <script src="js/app.js"></script>
+</body>
+</html>
